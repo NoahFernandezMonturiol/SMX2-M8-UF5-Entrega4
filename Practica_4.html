@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Entrega 04: SMX2-M8-UF5-Entrega 4</title>
+    <meta name="author" content="Noah">
+    <meta name="description" content="La meva cuarta pràctica">
+    <meta name="keywords" content="practica 4">
+    <meta charset="UTF-8">
+    <link rel="icon" href="./icono.png">
+</head>
+
+<body>
+    <!-- El cellpadding és l'espai entre cel·les -->
+    <table cellpadding="7" align="center" border="0">
+        <form action="mailto:noah.fernndez@gmail.com?Subject=entrega4-m8-uf5" enctype="text/plain" method="POST">
+            <tr>
+                <th colspan="2">
+                    <h1 style="color:brown">Registre d'Alumnes SMX2</h1>
+                </th>
+            </tr>
+            <tr>
+                <th align="left"><label for="nom_id">Nom:</label></th>
+                <td><input id="nom_id" type="text" name="Nom" placeholder="Escriu el teu nom" size="60" maxlength="20"
+                        required autofocus></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="cognom_id">Cognoms:</label></th>
+                <td><input id="cognom_id" type="text" name="Cognoms" placeholder="Escriu els teus cognoms" size="60"
+                        maxlength="80" required></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="correu_id">E-mail:</label></th>
+                <td><input id="correu_id" type="email" name="Correu" placeholder="Escriu el teu email" size="30"
+                        maxlength="30" required></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="datanaixement_id">Data de Naixement:</label></th>
+                <td><input id="datanaixement_id" type="date" name="Data naixement" value="1999-01-01" size="20"
+                        required></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="color_id">Color Preferit:</label></th>
+                <!-- El color predefinit és el vermell, que en hexadecimal es #FF0000 -->
+                <td><input id="color_id" type="color" name="Color" value="#FF0000" required></td>
+            </tr>
+            <tr>
+                <th align="left" rowspan="7">Mòduls Preferits de SMX2:</th>
+            <tr>
+                <td><input id="m4_id" type="checkbox" name="Modul preferit" value="M4"><label for="m4_id">M4 - Sistemes
+                        Operatius en Xarxa</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="m6_id" type="checkbox" name="Modul preferit" value="M6"><label for="m6_id">M6 -
+                        Seguretat
+                        Informàtica</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="m7_id" type="checkbox" name="Modul preferit" value="M7"><label for="m7_id">M7 - Serveis
+                        en Xarxa</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="m8_id" type="checkbox" name="Modul preferit" value="M8" checked><label for="m8_id">M8 -
+                        Aplicacions Web</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="m10_id" type="checkbox" name="Modul preferit" value="M10"><label for="m10_id">M10 -
+                        Empresa i
+                        Iniciativa Emprenedora</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="m11_id" type="checkbox" name="Modul preferit" value="M11"><label for="m11_id">M11 -
+                        Anglès
+                        Tècnic</label><br></td>
+            </tr>
+            <tr>
+                <th align="left" rowspan="6"><label>Què voldries fer després d'acabar SMX ?</label></th>
+            </tr>
+            <tr>
+                <td><input id="dam_id" type="radio" name="Eleccio" value="DAM"><label for="dam_id">DAM</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="asix_id" type="radio" name="Eleccio" value="ASIX" checked><label for="asix_id">ASIX</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="enginyeria_id" type="radio" name="Eleccio" value="Enginyeria Informàtica"><label for="enginyeria_id">Enginyeria
+                        Informàtica</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="treballar_id" type="radio" name="Eleccio" value="Treballar"><label for="treballar_id">Treballar</label><br></td>
+            </tr>
+            <tr>
+                <td><input id="res_id" type="radio" name="Eleccio" value="Res"><label for="res_id">Res</label><br></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="opinio_id">Què t'està semblant el llenguatge HTML ?</label></th>
+                <td><select id="opinio_id" name="Opinio" value="ok">
+                        <option value="M'ha agradat molt">M'ha agradat molt</option>
+                        <!-- La funció selected fa que aparegui seleccionat, es l'equivalent del checked -->
+                        <option value="M'ha agradat" selected>M'ha agradat</option>
+                        <option value="Ni fu ni fa">Ni fu ni fa</option>
+                        <option value="No m'ha agradat gaire">No m'ha agradat gaire</option>
+                        <option value="No m'ha agradat gens">No m'ha agradat gens</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left"><label for="notaesperada_id">Nota que esperes d'aquesta entrega</label></th>
+                <td><input id="notaesperada_id" name="Nota esperada" type="number" min="0" max="10" value="5" size="20"></td>
+            </tr>
+            <tr>
+                <th align="left"><label for="password_id">Escriu un password per xifrar l'entrega:</label></th>
+                <td><input id="password_id" type="password" name="Contrasenya" placeholder="Escriu un password" width="10"
+                        maxlength="10"></td>
+            </tr>
+            <tr>
+                <!-- El colspan és la funció que fusiona dues o més cel·les -->
+                <td colspan="2" align="center"><input id="enviar_id" type="submit" value="Enviar Respostes!">
+                    <input id="borrar_id" type="reset" value="Netejar Formulari!"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
